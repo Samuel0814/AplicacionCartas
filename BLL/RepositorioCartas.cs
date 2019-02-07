@@ -25,9 +25,9 @@ namespace BLL
 
         public override bool Guardar(Cartas entity)
         {
-            var destinatario = _contexto.destinatarios.Find(entity.DestinatarioID);
-            destinatario.CantidadCartas += entity.Cantidad;
-            _contexto.Entry(destinatario).State = System.Data.Entity.EntityState.Modified;
+            var desti = _contexto.destinatarios.Find(entity.DestinatarioID);
+            desti.CantidadCartas += entity.Cantidad;
+            _contexto.Entry(desti).State = System.Data.Entity.EntityState.Modified;
             _contexto.SaveChanges();
 
             return base.Guardar(entity);

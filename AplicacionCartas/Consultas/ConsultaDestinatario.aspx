@@ -22,7 +22,7 @@
                     <asp:TextBox ID="TextBoxBuscar" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
                 <div class="col-lg-1 p-0">
-                    <asp:LinkButton ID="BuscarLinkButton" CssClass="btn btn-secondary mt-4" runat="server" OnClick="BuscarLinkButton_Click" OnPageIndexChanging="CuentaGridView_PageIndexChanging">
+                    <asp:LinkButton ID="BuscarLinkButton" CssClass="btn btn-secondary mt-4" runat="server" OnClick="BuscarLinkButton_Click" OnPageIndexChanging="DestinatarioGridView_PageIndexChanging">
                         <span class="fas fa-search"></span>
                         Buscar
                     </asp:LinkButton>
@@ -31,7 +31,7 @@
 
             <div class="row justify-content-center mt-3">
                 <div class="col-lg-11">
-                    <asp:GridView ID="DestinatarioGridView" runat="server" AllowPaging="True" PageSize="7" CssClass="table table-striped table-hover table-responsive-lg" AutoGenerateColumns="False" OnSelectedIndexChanged="CuentaGridView_SelectedIndexChanged">
+                    <asp:GridView ID="DestinatarioGridView" runat="server" AllowPaging="True" PageSize="7" CssClass="table table-striped table-hover table-responsive-lg" AutoGenerateColumns="False" OnSelectedIndexChanged="DestinatarioGridView_SelectedIndexChanged">
                         <Columns>
                             <asp:BoundField DataField="Fecha" HeaderText="Fecha" />
                             <asp:BoundField DataField="Nombre" HeaderText="Nombre" />

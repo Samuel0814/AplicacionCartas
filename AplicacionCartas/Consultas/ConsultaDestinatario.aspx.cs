@@ -17,7 +17,6 @@ namespace AplicacionCartas.Consultas
 
         }
 
-
         Expression<Func<Destinatario, bool>> filtro = x => true;
 
         protected void BuscarLinkButton_Click(object sender, EventArgs e)
@@ -52,7 +51,7 @@ namespace AplicacionCartas.Consultas
             DestinatarioGridView.DataBind();
         }
 
-        protected void CuentaGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void DestinatarioGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             RepositorioBase<Destinatario> rb = new RepositorioBase<Destinatario>();
             DestinatarioGridView.DataSource = rb.GetList(filtro);

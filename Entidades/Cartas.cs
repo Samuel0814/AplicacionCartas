@@ -21,7 +21,7 @@ namespace Entidades
         {
             CartaID = CartaID;
             Fecha = fecha;
-            destinatarioID = DestinatarioID;
+            DestinatarioID = destinatarioID;
             cuerpo = Cuerpo;
             cantidad = Cantidad;
         }
